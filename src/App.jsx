@@ -3,11 +3,8 @@ import TodoForm from './TodoForm'
 import TodoList from './TodoList'
 
 function App() {
-  const [todos, setTodos] = useState([
-    { id: 1, text: 'Reply to Priya about the project timeline' },
-    { id: 2, text: 'Pick up groceries after work' },
-  ])
-  const [nextId, setNextId] = useState(3)
+  const [todos, setTodos] = useState([])
+  const [nextId, setNextId] = useState(1)
 
   const addTodo = (text) => {
     setTodos([...todos, { id: nextId, text }])
